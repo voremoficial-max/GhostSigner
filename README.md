@@ -26,22 +26,22 @@ Lo que NO hace:
 
 Sigue estos comandos en tu terminal (Linux, macOS, Termux o WSL en Windows).
 
-1. Clonar el repositorio y entrar a la carpeta:
+Paso 1. Clonar el repositorio y entrar a la carpeta:
 git clone https://github.com/voremoficial-max/GhostSigner.git
-cd ghostsigner
+cd GhostSigner
 
-2. Descargar el código fuente base de Google:
+Paso 2. Descargar el código fuente base de Google:
 git clone https://android.googlesource.com/platform/tools/apksig
 
-3. Aplicar los parches de GhostSigner:
+Paso 3. Aplicar los parches de GhostSigner:
 python3 patch.py
 (Deberías ver un mensaje indicando que LocalFileRecord.java y ApkUtils.java fueron parcheados)
 
-4. Compilar el firmador parcheado:
+Paso 4. Compilar el firmador parcheado:
 cd apksig
 gradle build -x test
 
-5. Preparar el ejecutable:
+Paso 5. Preparar el ejecutable:
 cd ..
 cp apksig/build/libs/apksig.jar .
 javac -cp apksig.jar Firmar.java
