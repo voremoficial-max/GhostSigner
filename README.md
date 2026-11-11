@@ -27,7 +27,7 @@ Lo que NO hace:
 Sigue estos comandos en tu terminal (Linux, macOS, Termux o WSL en Windows).
 
 1. Clonar el repositorio y entrar a la carpeta:
-git clone https://github.com/TU_USUARIO/ghostsigner.git
+git clone https://github.com/voremoficial-max/GhostSigner.git
 cd ghostsigner
 
 2. Descargar el código fuente base de Google:
